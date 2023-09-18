@@ -1,0 +1,24 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Portafolio de Backend para Frameworks de JavaScript",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --use-tabs --write \"**/*.{js,jsx,scss,html,md,json,sh}\" --ignore-path .gitignore"
+	},
+	"author": "Aritz Robledo Jorge",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"connect-multiparty": "^2.2.0",
+		"express": "^4.18.2",
+		"mongoose": "^7.5.0",
+		"prettier": "^3.0.3",
+		"validator": "^13.11.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}
