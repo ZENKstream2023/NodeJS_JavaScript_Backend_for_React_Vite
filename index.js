@@ -1,12 +1,13 @@
 "use strict";
 
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
 const app = require("./app");
 const port = process.env.PORT || 3900;
 
 // Conectar a la base de datos
 mongoose
-	.connect("mongodb://127.0.0.1:27017/portafolio", {
+	.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/portafolio", {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
